@@ -2,7 +2,8 @@ FROM debian:stretch-slim
 
 RUN apt-get update &&\
     apt-get install -y --no-install-recommends\
-    wget
+    wget\
+    ca-certificates
 
 ENV FLIGHTRADAR_VERSION 1.0.23-8
 RUN \
