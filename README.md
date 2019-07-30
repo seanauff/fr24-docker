@@ -6,4 +6,4 @@ Pull the image: ```docker pull seanauff/fr24```
 Signup your receiver (skip if you already have a sharing key): ```docker run -it --rm seanauff/fr24-docker --signup```
 The important parameters are your email address, and latitude, longitude, and elevation of your antenna. The other parameters are overridden when starting the docker image in the next step.
 
-Start the image: ```docker run -d -e FR24_KEY=<your_sharing_key> seanauff/fr24-docker```
+Start the image: ```docker run -d -e FR24_KEY=<your_sharing_key> --net=<name_of_dump1090_container> seanauff/fr24-docker```
