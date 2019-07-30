@@ -12,5 +12,5 @@ RUN \
 ADD fr24feed.ini /etc/fr24feed.ini
 WORKDIR fr24feed_arm
 
-ENV FR24_KEY
+ENV FR24_KEY=none
 ENTRYPOINT ["./fr24feed", "--fr24key=${FR24_KEY}"]
