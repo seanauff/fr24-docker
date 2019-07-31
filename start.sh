@@ -4,7 +4,7 @@
 #2. launches fr24feed
 
 # detect if feeder key is unset
-if [ "${PARAM_FR24KEY}" = "none"]
+if [ "${PARAM_FR24KEY}" = "none" ]
 then
   cat >&2 <<EOF
 A feeder key must be specified.
