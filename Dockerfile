@@ -16,10 +16,21 @@ WORKDIR fr24feed_armhf
 
 ADD start.sh .
 
-ENV FR24_KEY=none
-ENV DUMP1090_HOST=127.0.0.1:30005
+# Env variables for each config file parameter
+# defaults as below
+ENV PARAM_FR24KEY=none
+ENV PARAM_HOST=127.0.0.1:30005
+ENV PARAM_RECEIVER=beast-tcp
+ENV PARAM_RAW=no
+ENV PARAM_BS=no
+ENV PARAM_MPX=no
+ENV PARAM_PROCARGS=none
+ENV PARAM_LOGPATH=/var/log
+ENV PARAM_LOGMODE=0
+ENV PARAM_BIND_INTERFACE=0.0.0.0
+ENV PARAM_GT=600
 
 ENTRYPOINT ["./fr24feed"]
-CMD ./fr24feed --fr24key=${FR24_KEY}
+CMD ./fr24feed --fr24key=${FR24KEY}
 
 
