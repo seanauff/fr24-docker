@@ -1,5 +1,5 @@
 # fr24-docker
-FlightRadar24 feeder that connects to an exisiting dump1090 instance that outputs BEAST format messages on port 30005
+FlightRadar24 feeder that connects to an exisiting dump1090 instance that outputs BEAST format messages
 
 Pull the image: ```docker pull seanauff/fr24```
 
