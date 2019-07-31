@@ -26,7 +26,7 @@ then
   echo "procargs=\"${PARAM_PROCARGS}\"" >> fr24feed.ini
 fi
 echo "logpath=\"${PARAM_LOGPATH}\"" >> fr24feed.ini
-echo "logmode=\"${PARAM_LOGMDOE}\"" >> fr24feed.ini
+echo "logmode=\"${PARAM_LOGMODE}\"" >> fr24feed.ini
 echo "bind-interface=\"${PARAM_BIND_INTERFACE}\"" >> fr24feed.ini
 echo "gt=${PARAM_GT}" >> fr24feed.ini
 
