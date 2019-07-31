@@ -4,7 +4,8 @@
 #2. launches fr24feed
 
 # detect if feeder key is unset
-if [ "${PARAM_FR24KEY}" == "none"]; then
+if [ "${PARAM_FR24KEY}" = "none"]
+then
   cat >&2 <<EOF
 A feeder key must be specified.
 Run this container with the start flag "--signup" to obtain a feeder key and specify your feeder key as an environmental variable.
