@@ -19,8 +19,8 @@ ADD start.sh .
 # Env variables for each config file parameter
 # defaults as below
 ENV PARAM_FR24KEY=none
-ENV PARAM_HOST=127.0.0.1:30005
 ENV PARAM_RECEIVER=beast-tcp
+ENV PARAM_HOST=127.0.0.1:30005
 ENV PARAM_RAW=no
 ENV PARAM_BS=no
 ENV PARAM_MPX=no
