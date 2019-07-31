@@ -2,7 +2,7 @@
 FlightRadar24 feeder that connects to an exisiting dump1090 instance that outputs BEAST format messages.
 
 Pull the image:  
-```docker pull seanauff/fr24```
+```docker pull seanauff/fr24-docker```
 
 Signup your receiver by not specifying a feeder key (skip if you already have a sharing key):  
 ```docker run -it --rm seanauff/fr24-docker```  
