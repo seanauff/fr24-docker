@@ -17,4 +17,4 @@ WORKDIR fr24feed_armhf
 ENV FR24_KEY=none
 ENV DUMP1090_HOST=127.0.0.1:30005
 ENTRYPOINT ["./fr24feed"]
-CMD ["--fr24key=${FR24_KEY}","--host=\"${DUMP1090_HOST}\""]
+CMD ["--fr24key=${FR24_KEY}","--host=${DUMP1090_HOST}]
