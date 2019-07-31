@@ -7,9 +7,9 @@
 if [ "${PARAM_FR24KEY}" = "none" ]
 then
   cat >&2 <<EOF
-A feeder key must be specified.
-Run this container with the start flag "--signup" to obtain a feeder key and specify your feeder key as an environmental variable.
+No feeder key specified! Running signup...
 EOF
+  ./fr24feed --signup
   exit 1
 fi
 # delete any exisitng config file in working dir
