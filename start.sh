@@ -21,7 +21,8 @@ echo "host=\"${PARAM_HOST}\"" >> fr24feed.ini
 echo "raw=${PARAM_RAW}" >> fr24feed.ini
 echo "bs=${PARAM_BS}" >> fr24feed.ini
 echo "mpx=${PARAM_MPX}" >> fr24feed.ini
-if [ "${PARAM_PROCARGS}" != "none" ]; then
+if [ "${PARAM_PROCARGS}" != "none" ]
+then
   echo "procargs=\"${PARAM_PROCARGS}\"" >> fr24feed.ini
 fi
 echo "logpath=\"${PARAM_LOGPATH}\"" >> fr24feed.ini
