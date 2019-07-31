@@ -33,5 +33,8 @@ echo "gt=${PARAM_GT}" >> fr24feed.ini
 # move the config file to correct dir
 mv fr24feed.ini /etc/
 
+# print fr24feed.ini for debug
+cat /etc/fr24feed.ini
+
 # start the feeder
 ./fr24feed
