@@ -14,6 +14,8 @@ RUN \
 ADD fr24feed.ini /etc/fr24feed.ini
 WORKDIR fr24feed_armhf
 
+ADD start.sh .
+
 ENV FR24_KEY=none
 ENV DUMP1090_HOST=127.0.0.1:30005
 
