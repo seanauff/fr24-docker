@@ -19,16 +19,16 @@ RUN chmod +x start.sh
 
 # Env variables for each config file parameter
 # defaults as below
-ENV PARAM_FR24KEY=none
-ENV PARAM_RECEIVER=beast-tcp
-ENV PARAM_HOST=127.0.0.1:30005
-ENV PARAM_RAW=no
-ENV PARAM_BS=no
-ENV PARAM_MPX=no
-ENV PARAM_PROCARGS=none
-ENV PARAM_LOGPATH=/var/log
-ENV PARAM_LOGMODE=0
-ENV PARAM_BIND_INTERFACE=0.0.0.0
-ENV PARAM_GT=600
+ENV PARAM_FR24KEY=none \
+    PARAM_RECEIVER=beast-tcp \
+    PARAM_HOST=127.0.0.1:30005 \
+    PARAM_RAW=no \
+    PARAM_BS=no \
+    PARAM_MPX=no \
+    PARAM_PROCARGS=none \
+    PARAM_LOGPATH=/var/log \
+    PARAM_LOGMODE=0 \
+    PARAM_BIND_INTERFACE=0.0.0.0 \
+    PARAM_GT=600
 
 ENTRYPOINT ["./start.sh"]
