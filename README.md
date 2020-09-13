@@ -1,3 +1,6 @@
+# Deprecation notice
+Archiving this repo, as there are better versions out there. See here for the repos I currently use: https://github.com/mikenye
+
 # fr24-docker
 FlightRadar24 feeder that connects to an exisiting dump1090 instance that outputs BEAST format messages.
 
